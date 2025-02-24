@@ -184,6 +184,35 @@ body.dark-mode .nade-details {
     color: #9ca3af;
 }
 
+body.dark-mode .map-buttons button,
+body.dark-mode .type-buttons button,
+body.dark-mode .side-buttons button {
+    background-color: #1f2937;  /* Un gris foncé plus contrasté */
+    color: #d1d5db;
+    border: 1px solid #374151;
+}
+
+body.dark-mode .map-buttons button.active,
+body.dark-mode .type-buttons button.active,
+body.dark-mode .side-buttons button.active {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    border: 1px solid var(--color-primary);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* The switch - the box around the slider */
 .switch {
     font-size: 17px;
@@ -267,6 +296,138 @@ input:checked + .slider:before {
 
 
 
+/* 📌 Liens sociaux */
+.social-links {
+    margin-top: 1rem;
+}
+
+.social-links a {
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--color-primary);
+    transition: color 0.3s ease-in-out;
+}
+
+.social-links a:hover {
+    color: #1e40af;
+}
+
+/* Style de l'overlay */
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Fond semi-transparent */
+    backdrop-filter: blur(5px); /* Effet flou */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.overlay-content {
+    background: var(--color-white);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    width: 300px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Avatar Discord */
+.discord-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid var(--color-primary);
+    margin-bottom: 10px;
+}
+
+/* Bouton de fermeture */
+.close-btn {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: var(--color-gray);
+}
+
+/* Mode sombre */
+.dark-mode .overlay-content {
+    background: #1f2937;
+    color: white;
+}
+
+.dark-mode .discord-avatar {
+    border-color: #4ade80; /* Couleur verte en mode sombre */
+}
+
+/* Lien du pseudo */
+.discord-profile-link {
+    text-decoration: none;
+    color: var(--color-primary);
+    font-weight: bold;
+    transition: color 0.2s;
+}
+
+.discord-profile-link:hover {
+    color: #2563eb; /* Bleu plus foncé au survol */
+}
+
+/* Mode sombre */
+.dark-mode .discord-profile-link {
+    color: #4ade80; /* Vert en mode sombre */
+}
+
+.dark-mode .discord-profile-link:hover {
+    color: #22c55e; /* Vert plus foncé */
+}
+
+
+
+
+
+
+
+
+
+/* 📌 Animation d'apparition */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* 📌 Avatar Discord */
+.discord-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+/* 📌 Bouton de fermeture */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+}
+
+
+
+
+
+
 
 
 
@@ -309,6 +470,7 @@ input:checked + .slider:before {
     margin-bottom: 1.5rem;
 }
 
+
 /* 🌞 Mode clair (par défaut) */
 #search-bar {
     width: 100%;
@@ -329,6 +491,10 @@ input:checked + .slider:before {
     box-shadow: 0 0 5px rgba(59, 130, 246, 0.5);
 }
 
+
+
+
+
 /* 🌙 Mode sombre */
 .dark-mode #search-bar {
     background-color: #1f2937; /* Fond sombre */
@@ -341,4 +507,7 @@ input:checked + .slider:before {
     border-color: var(--color-primary);
     box-shadow: 0 0 5px rgba(59, 130, 246, 0.7);
 }
+
+
+
 

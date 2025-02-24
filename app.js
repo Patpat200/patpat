@@ -155,6 +155,32 @@ document.getElementById('search-bar').addEventListener('input', function() {
 });
 
 
+document.addEventListener("DOMContentLoaded", function() {
+    const discordBtn = document.getElementById("discordBtn");
+    const discordOverlay = document.getElementById("discordOverlay");
+    const closeBtn = document.querySelector(".close-btn");
+
+    // 📌 Ouvrir l'overlay
+    discordBtn.addEventListener("click", function(event) {
+        event.preventDefault(); // Empêche le lien de rediriger
+        discordOverlay.style.display = "flex";
+    });
+
+    // 📌 Fermer l'overlay
+    closeBtn.addEventListener("click", function() {
+        discordOverlay.style.display = "none";
+    });
+
+    // 📌 Fermer l'overlay si on clique en dehors
+    discordOverlay.addEventListener("click", function(event) {
+        if (event.target === discordOverlay) {
+            discordOverlay.style.display = "none";
+        }
+    });
+});
+
+
+
 // Initialisation de l'application
 document.addEventListener('DOMContentLoaded', () => {
     new CS2UtilityApp();

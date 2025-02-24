@@ -22,7 +22,7 @@
         <div class="search-container">
             <input type="text" id="search-bar" placeholder="Search lineup..." />
 
-            
+
         </div>
 
         <header>
@@ -81,29 +81,57 @@
 
     <footer class="footer">
         <p>&copy; 2025 CS2 Utility Guide. All rights reserved.</p>
+        <p>If you have any suggestions to improve my site or new lineups that are not on my site, do not hesitate to contact me on Steam or Discord.</p>
         <div class="social-links">
             <a href="https://steamcommunity.com/id/patpat2000/" target="_blank">🧸 Steam</a>
-            <a href="https://discord.gg/pS2GE8VbYK" target="_blank">🔗 Discord</a>
+            <a href="#" id="discordBtn">💬 Discord</a>
         </div>
     </footer>
+    
+    <!-- 🌟 Overlay du profil Discord -->
+    <div id="discordOverlay" class="overlay">
+        <div class="overlay-content">
+            <span class="close-btn">&times;</span>
+            <img src="https://cdn.discordapp.com/avatars/689798565647614190/a_c1cc9b864293788e34abf494cbaf0a1a" alt="Discord Avatar" class="discord-avatar">
+            <h2>
+                <a href="https://discord.com/users/689798565647614190" target="_blank" class="discord-profile-link">
+                    tacos1500
+                </a>
+            </h2>
+            <p>🔥 Add me on Discord ! 🔥</p>
+        </div>
+    </div>
     
 
 
     <!-- darck mod -->
 
     <script>
-        const themeToggle = document.getElementById('theme-toggle');
-        const body = document.body;
-      
-        themeToggle.addEventListener('click', () => {
-          body.classList.toggle('dark-mode');
-          if (body.classList.contains('dark-mode')) {
-            themeToggle.textContent = 'Light Mode';
-          } else {
-            themeToggle.textContent = 'Darck mode';
-          }
+        document.addEventListener("DOMContentLoaded", function () {
+            const themeToggle = document.getElementById("theme-toggle");
+            const body = document.body;
+    
+            // Vérifie si un thème est déjà enregistré
+            if (localStorage.getItem("theme") === "dark") {
+                body.classList.add("dark-mode");
+                themeToggle; // Icône du mode clair
+            }
+    
+            themeToggle.addEventListener("click", function () {
+                body.classList.toggle("dark-mode");
+    
+                // Vérifie si le mode sombre est activé ou désactivé
+                if (body.classList.contains("dark-mode")) {
+                    localStorage.setItem("theme", "dark");
+                    themeToggle; // Icône mode clair
+                } else {
+                    localStorage.setItem("theme", "light");
+                    themeToggle; // Icône mode sombre
+                }
+            });
         });
     </script>
+    
 
     <script src="data.js"></script>
     <script src="app.js"></script>
