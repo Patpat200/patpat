@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS2 Utility Guide</title>
+    <link rel="stylesheet" href="style.css">
+    
+
+</head>
+<body>
+
+    <label class="switch" style="position: absolute; top: 1rem; right: 1rem;">
+        <input type="checkbox" id="theme-toggle">
+        <span class="slider"></span>
+    </label>
+
+     
+
+    <div class="container">
+        
+        <div class="search-container">
+            <input type="text" id="search-bar" placeholder="Search lineup..." />
+
+        </div>
+
+        <header>
+            <h1>CS2 Utility Guide</h1>
+        </header>
+
+        <div class="filters">
+            <div class="map-selector">
+                <h2>Select map</h2>
+                <div class="map-buttons" id="mapButtons"></div>
+            </div>
+
+            <div class="type-selector"> 
+                <h2>Grenade type</h2>
+                <div class="type-buttons" id="typeButtons"></div>
+            </div>
+
+            <div class="side-selector">
+                <h2>Select side</h2>
+                <div class="side-buttons" id="sideButtons"></div>
+            </div>
+            
+
+            
+        </div>
+
+
+        <main class="nade-grid" id="nadeGrid"></main>
+    </div>
+
+    <template id="nadeCardTemplate">
+        <div class="nade-card">
+            <img class="nade-image" src="" alt="">
+            
+            <div class="nade-content">
+                <div class="nade-header">
+                    <span class="nade-type"></span>
+                    <span class="nade-side"></span>
+                </div>
+
+                <h3 class="nade-title"></h3>
+                <div class="nade-position">
+                    <span class="from"></span>
+                    <span class="arrow">→</span>
+                    <span class="to"></span>
+                </div>
+
+                <div class="nade-details">
+                    <span class="technique"></span>
+                    <span class="difficulty"></span>
+                </div>
+
+            </div>
+        </div>
+    </template>
+
+    <footer class="footer">
+        <p>&copy; 2025 CS2 Utility Guide. All rights reserved.</p>
+        <div class="social-links">
+            <a href="https://steamcommunity.com/id/patpat2000/" target="_blank">🧸 Steam</a>
+            <a href="https://discord.gg/pS2GE8VbYK" target="_blank">🔗 Discord</a>
+        </div>
+    </footer>
+    
+
+
+    <!-- darck mod -->
+
+    <script>
+        const themeToggle = document.getElementById('theme-toggle');
+        const body = document.body;
+      
+        themeToggle.addEventListener('click', () => {
+          body.classList.toggle('dark-mode');
+          if (body.classList.contains('dark-mode')) {
+            themeToggle.textContent = 'Light Mode';
+          } else {
+            themeToggle.textContent = 'Darck mode';
+          }
+        });
+    </script>
+
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

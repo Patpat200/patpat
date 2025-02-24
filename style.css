@@ -1,0 +1,344 @@
+:root {
+    --color-bg: #f3f4f6;
+    --color-white: #ffffff;
+    --color-primary: #3b82f6;
+    --color-gray: #6b7280;
+    --color-gray-light: #e5e7eb;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background-color: var(--color-bg);
+    line-height: 1.5;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+header {
+    background-color: var(--color-white);
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 2rem;
+    color: #111827;
+}
+
+.filters {
+    background-color: var(--color-white);
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    color: #374151;
+}
+
+.map-buttons, .type-buttons, .side-buttons{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+    background-color: var(--color-gray-light);
+    color: var(--color-gray);
+}
+
+button.active {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+
+.nade-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.nade-card {
+    background-color: var(--color-white);
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.2s;
+}
+
+.nade-card:hover {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.nade-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.nade-content {
+    padding: 1rem;
+}
+
+.nade-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+.nade-type, .nade-side {
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.nade-title {
+    font-size: 1.125rem;
+    margin-bottom: 0.5rem;
+    color: #111827;
+}
+
+.nade-position {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.875rem;
+    color: var(--color-gray);
+    margin-bottom: 0.5rem;
+}
+
+.nade-details {
+    display: flex;
+    gap: 1rem;
+    font-size: 0.875rem;
+    color: var(--color-gray);
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0.5rem;
+    }
+    
+    .nade-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+/* darck mod */
+
+body.dark-mode {
+    --color-bg: #111827;
+    --color-white: #374151;
+    --color-primary: #60a5fa;
+    --color-gray: #d1d5db;
+    --color-gray-light: #4b5563;
+    color: var(--color-gray);
+}
+
+body.dark-mode header,
+body.dark-mode .filters,
+body.dark-mode .nade-card,
+body.dark-mode button {
+    background-color: var(--color-white);
+    color: var(--color-gray);
+}
+
+body.dark-mode button.active {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode .nade-title {
+    color: #d1d5db;
+}
+
+body.dark-mode .nade-position,
+body.dark-mode .nade-details {
+    color: #9ca3af;
+}
+
+/* The switch - the box around the slider */
+.switch {
+    font-size: 17px;
+    position: relative;
+    display: inline-block;
+    width: 3.5em;
+    height: 2em;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.slider {
+    --background: #28096b;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--background);
+    transition: .5s;
+    border-radius: 30px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 1.4em;
+    width: 1.4em;
+    border-radius: 50%;
+    left: 10%;
+    bottom: 15%;
+    box-shadow: inset 8px -4px 0px 0px #fff000;
+    background: var(--background);
+    transition: .5s;
+}
+
+input:checked + .slider {
+    background-color: #522ba7;
+}
+
+input:checked + .slider:before {
+    transform: translateX(100%);
+    box-shadow: inset 15px -4px 0px 15px #fff000;
+}
+
+
+
+.footer {
+    background-color: var(--color-white);
+    color: var(--color-gray);
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    border-top: 1px solid var(--color-gray-light);
+    font-size: 0.875rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.footer .social-links {
+    margin-top: 0.5rem;
+}
+
+.footer .social-links a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: var(--color-primary);
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.footer .social-links a:hover {
+    color: var(--color-primary-dark);
+}
+
+
+
+
+
+
+/* Style général du badge de difficulté */
+.difficulty{
+    display: inline-block;
+    padding: 0.3rem 0.6rem;
+    border-radius: 0.5rem;
+    font-size: 0.875rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    min-width: 80px;
+}
+
+/* Couleurs spécifiques */
+.difficulty-easy {
+    background-color: #d4edda; /* Vert clair */
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.difficulty-medium {
+    background-color: #fff3cd; /* Jaune clair */
+    color: #856404;
+    border: 1px solid #ffeeba;
+}
+
+.difficulty-hard {
+    background-color: #f8d7da; /* Rouge clair */
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+
+/* Conteneur de la barre de recherche */
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+/* 🌞 Mode clair (par défaut) */
+#search-bar {
+    width: 100%;
+    max-width: 400px;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid var(--color-gray-light);
+    border-radius: 0.5rem;
+    background-color: var(--color-white);
+    color: var(--color-gray);
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Effet focus */
+#search-bar:focus {
+    border-color: var(--color-primary);
+    box-shadow: 0 0 5px rgba(59, 130, 246, 0.5);
+}
+
+/* 🌙 Mode sombre */
+.dark-mode #search-bar {
+    background-color: #1f2937; /* Fond sombre */
+    color: #f3f4f6; /* Texte clair */
+    border: 1px solid #374151; /* Bordure adaptée */
+}
+
+/* Effet focus en mode sombre */
+.dark-mode #search-bar:focus {
+    border-color: var(--color-primary);
+    box-shadow: 0 0 5px rgba(59, 130, 246, 0.7);
+}
+
