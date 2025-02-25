@@ -425,12 +425,6 @@ input:checked + .slider:before {
 
 
 
-
-
-
-
-
-
 /* Style général du badge de difficulté */
 .difficulty{
     display: inline-block;

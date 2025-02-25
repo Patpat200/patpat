@@ -85,6 +85,7 @@
         <div class="social-links">
             <a href="https://steamcommunity.com/id/patpat2000/" target="_blank">🧸 Steam</a>
             <a href="#" id="discordBtn">💬 Discord</a>
+            <p id="visit-counter">Visits : 0</p>
         </div>
     </footer>
     
@@ -130,6 +131,17 @@
                 }
             });
         });
+
+
+
+        document.addEventListener("DOMContentLoaded", function () {
+    fetch("https://api.countapi.xyz/hit/ton-nom-de-site/visits")
+        .then(response => response.json())
+        .then(data => {
+            document.getElementById("visit-counter").innerText = `Visites : ${data.value}`;
+        });
+    });
+
     </script>
     
 
