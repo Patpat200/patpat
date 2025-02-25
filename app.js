@@ -112,8 +112,7 @@ class CS2UtilityApp {
             card.querySelector('.difficulty').textContent = nade.difficulty;
             card.querySelector('.difficulty').classList.add(`difficulty-${nade.difficulty}`);
 
-
-
+            
             // Rendre la carte cliquable pour ouvrir la vidéo
             const nadeCard = card.querySelector('.nade-card');
             if (nade.videoUrl) {
@@ -133,6 +132,9 @@ class CS2UtilityApp {
             nadeGrid.appendChild(card);
         });
     }
+
+
+    
 }
 
 

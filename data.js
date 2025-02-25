@@ -16,7 +16,7 @@ const nadeData = {
             difficulty: 'hard',
             side: 'T',
             description: 'Perfect smoke to block window',
-            imageUrl: 'img/window.png',
+            imageUrl: 'img/mirage/window.png',
             videoUrl: 'https://www.youtube.com/watch?v=tXU64vhW6fU', // Ajout du lien YouTube
             position: {
                 from: 'T spawn',
@@ -33,7 +33,7 @@ const nadeData = {
             difficulty: 'easy',
             side: 'T',
             description: 'Perfect smoke for A site',
-            imageUrl: 'img/ct_smoke.jpg',
+            imageUrl: 'img/mirage/ct_smoke.jpg',
             videoUrl: 'https://youtu.be/pPfUEq-1MDk',
             position: {
                 from: 'T spawn',
@@ -50,7 +50,7 @@ const nadeData = {
             difficulty: 'easy',
             side: 'T',
             description: 'Perfect smoke for exec B site',
-            imageUrl: 'img/banane.jpg',
+            imageUrl: 'img/inferno/banane.jpg',
             videoUrl: 'https://youtu.be/Kflwu8Iffw0',
             position: {
                 from: 'Banana',
@@ -67,7 +67,7 @@ const nadeData = {
             difficulty: 'medium',
             side: 'T',
             description: 'Perfect smoke for B site',
-            imageUrl: 'img/vent_vertigo.jpg',
+            imageUrl: 'img/vertigo/vent_vertigo.jpg',
             videoUrl: 'https://youtu.be/1ksz79f9LXQ',
             position: {
                 from: 'T spawn',
@@ -84,7 +84,7 @@ const nadeData = {
             difficulty: 'medium',
             side: 'T',
             description: 'Perfect smoke for rush mid',
-            imageUrl: 'img/red_room.jpg',
+            imageUrl: 'img/ancient/red_room.jpg',
             videoUrl: 'https://youtu.be/rxjTVSBVe_4',
             position: {
                 from: 'T spawn',
@@ -101,7 +101,7 @@ const nadeData = {
             difficulty: 'medium',
             side: 'CT',
             description: 'Perfect smoke for fix A',
-            imageUrl: 'img/A_main.jpg',
+            imageUrl: 'img/ancient/A_main.jpg',
             videoUrl: 'https://youtu.be/9ibK_eT8sFU',
             position: {
                 from: 'CT spawn',
@@ -118,7 +118,7 @@ const nadeData = {
             difficulty: 'medium',
             side: 'T',
             description: 'Perfect smoke for rush A',
-            imageUrl: 'img/CT_lane.jpg',
+            imageUrl: 'img/ancient/CT_lane.jpg',
             videoUrl: 'https://youtu.be/eMXh-7v3Nag',
             position: {
                 from: 'Smoker',
@@ -136,7 +136,7 @@ const nadeData = {
             difficulty: 'easy',
             side: 'T',
             description: 'Perfect smoke for rush mid',
-            imageUrl: 'img/mid_anubis.jpg',
+            imageUrl: 'img/anubis/mid_anubis.jpg',
             videoUrl: 'https://youtu.be/3pVQFpoftmw',
             position: {
                 from: 'T spawn',
@@ -153,7 +153,7 @@ const nadeData = {
             difficulty: 'medium',
             side: 'CT',
             description: 'Perfect smoke for bloc rush mid',
-            imageUrl: 'img/molo_mid.jpg',
+            imageUrl: 'img/anubis/molo_mid.jpg',
             videoUrl: 'https://youtu.be/Is6L1H7EbDc',
             position: {
                 from: 'A',
@@ -170,7 +170,7 @@ const nadeData = {
             difficulty: 'medium',
             side: 'CT',
             description: 'Perfect HE mid',
-            imageUrl: 'img/HE_cs2.webp',
+            imageUrl: 'img/anubis/HE_cs2.webp',
             videoUrl: 'https://youtu.be/yuFJB-lOxSg',
             position: {
                 from: 'A',
@@ -187,7 +187,7 @@ const nadeData = {
             difficulty: 'medium',
             side: 'T',
             description: 'Perfect smoke for short site B',
-            imageUrl: 'img/smoke_short.jpg',
+            imageUrl: 'img/ancient/smoke_short.jpg',
             videoUrl: 'https://youtu.be/xwryP6JKyC4',
             position: {
                 from: 'Ruins',
@@ -204,7 +204,7 @@ const nadeData = {
             difficulty: 'medium',
             side: 'T',
             description: 'Perfect smoke for long site B',
-            imageUrl: 'img/smoke_long.jpg',
+            imageUrl: 'img/ancient/smoke_long.jpg',
             videoUrl: 'https://youtu.be/t8nVBmTTP90',
             position: {
                 from: 'Ruins',
@@ -221,7 +221,7 @@ const nadeData = {
             difficulty: 'medium',
             side: 'CT',
             description: 'Perfect flash for control mid',
-            imageUrl: 'img/vertigo.webp',
+            imageUrl: 'img/vertigo/vertigo.webp',
             videoUrl: 'https://youtu.be/a0nVTApUBRU',
             position: {
                 from: 'CT spawn',
@@ -238,7 +238,7 @@ const nadeData = {
             difficulty: 'hard',
             side: 'CT',
             description: 'Perfect smoke for control mid',
-            imageUrl: 'img/mid_ancient.jpg',
+            imageUrl: 'img/ancient/mid_ancient.jpg',
             videoUrl: 'https://youtu.be/DSCJPxKxO7Q',
             position: {
                 from: 'CT spawn',

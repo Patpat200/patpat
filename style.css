@@ -84,12 +84,12 @@ button.active {
     background-color: var(--color-white);
     border-radius: 0.5rem;
     overflow: hidden;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 5);
     transition: box-shadow 0.2s;
 }
 
 .nade-card:hover {
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 10);
 }
 
 .nade-image {
@@ -199,15 +199,6 @@ body.dark-mode .side-buttons button.active {
     color: var(--color-white);
     border: 1px solid var(--color-primary);
 }
-
-
-
-
-
-
-
-
-
 
 
 
