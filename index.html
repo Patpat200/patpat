@@ -8,21 +8,16 @@
     
 
 </head>
-<body>
 
     <label class="switch" style="position: absolute; top: 1rem; right: 1rem;">
         <input type="checkbox" id="theme-toggle">
         <span class="slider"></span>
     </label>
 
-     
-
     <div class="container">
         
         <div class="search-container">
             <input type="text" id="search-bar" placeholder="Search lineup..." />
-
-
         </div>
 
         <header>
@@ -74,10 +69,19 @@
                     <span class="technique"></span>
                     <span class="difficulty"></span>
                 </div>
-
+ 
+    
             </div>
+
         </div>
+
     </template>
+
+    
+    <div style="position: absolute; top: 1rem; left: 1rem;">
+        <button id="suggestion-button">+</button>
+    </div>
+    
 
     <footer class="footer">
         <p>&copy; 2025 CS2 Utility Guide. All rights reserved.</p>
@@ -102,12 +106,11 @@
             <p>🔥 Add me on Discord ! 🔥</p>
         </div>
     </div>
-    
-
 
     <!-- darck mod -->
 
     <script>
+        
         document.addEventListener("DOMContentLoaded", function () {
             const themeToggle = document.getElementById("theme-toggle");
             const body = document.body;
@@ -138,5 +141,8 @@
 
     <script src="data.js"></script>
     <script src="app.js"></script>
+    <script src="auth.js"></script>
+
+
 </body>
 </html>

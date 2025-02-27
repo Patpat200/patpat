@@ -496,3 +496,13 @@ input:checked + .slider:before {
 
 
 
+
+
+  #suggestion-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+  

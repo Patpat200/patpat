@@ -183,6 +183,31 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
+document.getElementById('suggestion-button').addEventListener('click', function() {
+    const userProposal = prompt("Your propositon (YT link for line up) :");
+    if (userProposal) {
+      sendToDiscord(userProposal);
+    }
+  });
+  
+  function sendToDiscord(message) {
+    const webhookUrl = 'https://discord.com/api/webhooks/1344587321797906513/3eCeOdh5mJ8CSYzc14FvX7eH4xdaZeMiJ4P86EekeLnXjRMSAHn9_wVo6Feg9vmF79Au'; 
+    fetch(webhookUrl, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ content: message }),
+    })
+    .then(response => response.json())
+    .then(data => console.log('Success:', data))
+    .catch(error => console.error('Error:', error));
+  }
+  
+
+
+
+
 // Initialisation de l'application
 document.addEventListener('DOMContentLoaded', () => {
     new CS2UtilityApp();

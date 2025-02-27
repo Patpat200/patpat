@@ -247,5 +247,43 @@ const nadeData = {
             technique: 'jump-throw + d',
             tags: ['control', 'mid']
         },
+
+
+        {
+            id: '15',
+            title: 'Smoke main',
+            map: 'nuke',
+            type: 'smoke',
+            difficulty: 'medium',
+            side: 'T',
+            description: 'Perfect smoke for control outside',
+            imageUrl: 'img/nuke/main.jpg',
+            videoUrl: 'https://youtu.be/sJrf80vgUZA',
+            position: {
+                from: 'T spawn',
+                to: 'main'
+            },
+            technique: 'jump-throw',
+            tags: ['control', 'mid', 'exec']
+        },
+        {
+            id: '16',
+            title: 'Smoke garage',
+            map: 'nuke',
+            type: 'smoke',
+            difficulty: 'medium',
+            side: 'T',
+            description: 'Perfect smoke for control outside',
+            imageUrl: 'img/nuke/garage.jpg',
+            videoUrl: 'https://youtu.be/agj_qrQKyuU',
+            position: {
+                from: 'T spawn',
+                to: 'garage'
+            },
+            technique: 'jump-throw',
+            tags: ['control', 'mid', 'exec']
+        },
+
+        
     ]
 };
